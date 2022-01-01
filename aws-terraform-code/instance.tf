@@ -17,10 +17,10 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = "ami-0f2e255ec956ade7f"
   instance_type = "t2.xlarge"
-  #Change your key 
+  # Change your key 
   key_name = "account-key"
   # Add security group
-  #security_groups = []
+  # security_groups = []
   root_block_device {
     volume_size = 100 
   }
