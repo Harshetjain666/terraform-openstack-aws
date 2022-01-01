@@ -24,13 +24,6 @@ else
          exit
     fi
 fi
-#sudo apt-get install -y git-core &> /dev/null
-#if [ $? == 0 ] ; then
-#    echo -e " \xE2\x9C\x85 Requirement installed"
-#else
-#    echo -e " \xE2\x9D\x8C Error installing requirements"
-#    exit
-#fi
 if [ -d /opt/stack/devstack ] ; then
     echo -e " \xE2\x9C\x85 Code exist"
 else
@@ -75,11 +68,8 @@ sudo -H -u stack /opt/stack/devstack/stack.sh &> /dev/null
 }
 a &
 PID=$!
-#SC=$?
 #echo $PID
 #USER=`whoami`
-#process_id=`/bin/ps -fu $USER| grep "openstack.sh" | grep -v "grep" | awk '{print $2}'`
-#PID=`echo $process_id | awk '{print $2}'`
 echo -e "\nTHIS MAY TAKE A WHILE, PLEASE BE PATIENT WHILE OPENSTACK IS INSTALLING..."
 printf "[ "
 # While process is running...
