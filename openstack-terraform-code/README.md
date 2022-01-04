@@ -1,5 +1,5 @@
 # OpenStack terraform code
-
+![infra instance with volume](../img/topology.png "infra instance with volume")
 Start with a fresh environment of openstack.
 ## Usage
 Download code 
